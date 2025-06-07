@@ -1,0 +1,20 @@
+# this is an auto generated file. This will be overwritten
+
+query GetSensorSummary($deviceId: String!) {
+  getSensorSummary(deviceId: $deviceId) {
+    sensorType
+    deviceId
+    measure_name
+    time
+    value
+    __typename
+  }
+}
+
+query GetSensorHistory($deviceId: String!, $sensorType: String!) {
+  getSensorHistory(deviceId: $deviceId, sensorType: $sensorType) {
+    time
+    measureValue
+    __typename
+  }
+}
