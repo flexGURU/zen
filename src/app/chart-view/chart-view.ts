@@ -69,10 +69,10 @@ export class ChartView {
         labels: [],
         datasets: [
           {
-            label: 'Sensor Reading',
+            label: 'Reading',
             data: [],
             fill: false,
-            borderColor: 'rgb(75, 192, 192)',
+            borderColor: 'rgb(0, 139, 139)',
             tension: 0.3,
           },
         ],
@@ -81,15 +81,12 @@ export class ChartView {
         responsive: true,
         plugins: {
           legend: {
-            display: true,
+            display: false,
           },
         },
         scales: {
           x: {
             title: { display: true, text: 'Time (HH:MM)' },
-          },
-          y: {
-            title: { display: true, text: 'Value' },
           },
         },
       },
