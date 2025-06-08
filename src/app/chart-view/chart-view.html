@@ -1,0 +1,42 @@
+<div class="flex flex-row justify-evenly my-10 border-t-2 border-gray-200 p-5">
+  <div class="flex items-center">
+    <input
+      type="radio"
+      id="sensor-co2"
+      name="sensor"
+      checked="true"
+      (change)="fetchSensorHistory('co2')"
+      class="w-4 h-4 text-blue-600"
+    />
+    <label for="sensor-co2" class="ms-2 text-sm font-medium">CO₂</label>
+  </div>
+
+  <div class="flex items-center">
+    <input
+      type="radio"
+      id="sensor-pressure"
+      name="sensor"
+      (change)="fetchSensorHistory('pressure')"
+      class="w-4 h-4 text-blue-600"
+    />
+    <label for="sensor-pressure" class="ms-2 text-sm font-medium"
+      >Pressure</label
+    >
+  </div>
+
+  <div class="flex items-center">
+    <input
+      type="radio"
+      id="sensor-temperature"
+      name="sensor"
+      (change)="fetchSensorHistory('temperature')"
+      class="w-4 h-4 text-blue-600"
+    />
+    <label for="sensor-temperature" class="ms-2 text-sm font-medium"
+      >Temperature</label
+    >
+  </div>
+</div>
+<div>ss
+  <canvas id="sensorChart"></canvas>
+</div>

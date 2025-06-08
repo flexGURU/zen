@@ -6,10 +6,11 @@ import { Card } from '../card/card';
 import { queryService } from '../core/query';
 import { Header } from '../header/header';
 import { Loader } from "../loader/loader";
+import { ChartView } from "../chart-view/chart-view";
 
 @Component({
   selector: 'app-dashboard',
-  imports: [Header, CommonModule, Card, Loader],
+  imports: [Header, CommonModule, Card, Loader, ChartView],
   templateUrl: './dashboard.html',
   styleUrl: './dashboard.css',
 })
