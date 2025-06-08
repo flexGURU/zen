@@ -5,10 +5,11 @@ import { APIService } from '../core/API.service';
 import { Card } from '../card/card';
 import { queryService } from '../core/query';
 import { Header } from '../header/header';
+import { Loader } from "../loader/loader";
 
 @Component({
   selector: 'app-dashboard',
-  imports: [Header,CommonModule, Card],
+  imports: [Header, CommonModule, Card, Loader],
   templateUrl: './dashboard.html',
   styleUrl: './dashboard.css',
 })
