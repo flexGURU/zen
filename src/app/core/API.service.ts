@@ -21,7 +21,7 @@ export class APIService {
             'https://nukrqo3vtjchtpc353ia2zonbm.appsync-api.us-east-1.amazonaws.com/graphql',
           region: 'us-east-1',
           defaultAuthMode: 'apiKey',
-          apiKey: 'da2-m6mzx7z3ufdd3awgfn7pkywv5m',
+          apiKey: 'da2-q6wagkpmxre6de6gpjnk7olx4i',
         },
       },
     });
