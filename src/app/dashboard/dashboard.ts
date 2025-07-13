@@ -18,5 +18,6 @@ export class Dashboard {
   sensorData!: SensorData[];
   sensorCard = queryService();
 
+
   
 }

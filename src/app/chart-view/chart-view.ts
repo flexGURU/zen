@@ -78,7 +78,7 @@ export class ChartView {
         ],
       },
       options: {
-        responsive: true,
+        responsive:   true,
         plugins: {
           legend: {
             display: false,
