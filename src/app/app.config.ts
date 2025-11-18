@@ -11,9 +11,11 @@ import {
   provideTanStackQuery,
   QueryClient,
 } from '@tanstack/angular-query-experimental';
+import { provideHttpClient, withFetch } from '@angular/common/http';
 
 export const appConfig: ApplicationConfig = {
   providers: [
+    provideHttpClient(withFetch()),
     provideTanStackQuery(new QueryClient()),
     provideBrowserGlobalErrorListeners(),
     provideZonelessChangeDetection(),
