@@ -8,10 +8,10 @@ export const queryService = () => {
 
   const query = injectQuery(() => ({
     queryKey: ['sensorSummary'],
-    queryFn: () => lastValueFrom(sensorService.GetSensorSummary('esp32-001')),
     refetchInterval: 10000,
     staleTime: 5000,
+    queryFn: () => lastValueFrom(sensorService.getSensorData()),
   }));
 
-  return query
+  return query;
 };
